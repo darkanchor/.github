@@ -1,6 +1,6 @@
-# Dark Anchor — nginx infrastructure for the AI era
+# darkanchor — nginx infrastructure for the AI era
 
-Dark Anchor builds the richest nginx module ecosystem under Apache 2.0 — and the only nginx-native AI gateway.
+darkanchor builds the richest nginx module ecosystem under Apache 2.0 — and the only nginx-native AI gateway.
 
 ---
 
@@ -66,7 +66,7 @@ git submodule init && git submodule update
 zig build
 ```
 
-→ [**Read the docs**](https://darkanchor.com/docs) (coming soon)
+→ [**Read the docs**](https://www.darkanchor.com/docs) (coming soon)
 
 ---
 
@@ -134,5 +134,5 @@ Basic routing, auth, health checks, and rate limiting. Free. Forever.
 ---
 
 <p align="center">
-  <sub>Dark Anchor · nginx infrastructure for the AI era · <a href="https://darkanchor.com">darkanchor.com</a></sub>
+  <sub>darkanchor · The infra anchor of the AI era · <a href="https://www.darkanchor.com">darkanchor.com</a></sub>
 </p>
