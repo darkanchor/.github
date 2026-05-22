@@ -29,7 +29,7 @@ darkanchor builds the richest nginx module ecosystem under Apache 2.0 — and th
 | Consul service discovery | ❌ | ✅ Free | ❌ |
 | PostgreSQL REST API | ❌ | ✅ Free | ❌ |
 
-**We give you NGINX Plus features — free. Plus capabilities NGINX Plus doesn't have.** And when you need AI gateway features (token-level rate limiting, cost tracking, semantic caching), we have paid modules for that.
+**We give you NGINX Plus features — free. Plus capabilities NGINX Plus doesn't have.** And when you need AI gateway features (token-level rate limiting, cost tracking), we have paid modules for that.
 
 ---
 
@@ -47,7 +47,7 @@ No fork. No custom binary. Just `--add-module=nginz` and `js_import` directives.
 
 ## Our positioning
 
-> **"NGINX Plus features, free. Plus Consul, Prometheus, and AI gateway. TCP is HAProxy's job — we recommend it, we document it, we don't reinvent it."**
+> **"NGINX Plus features, free. Plus Consul, Prometheus, and AI gateway"**
 
 We're opinionated because focus ships faster than completeness.
 
@@ -57,7 +57,7 @@ We're opinionated because focus ships faster than completeness.
 
 ```bash
 # Pull the Docker image
-docker pull darkanchor/nginx:latest
+docker pull darkanchor/nginz:latest
 
 # Or build from source
 git clone https://github.com/darkanchor/nginz.git
@@ -66,7 +66,7 @@ git submodule init && git submodule update
 zig build
 ```
 
-→ [**Read the docs**](https://www.darkanchor.com/docs) (coming soon)
+→ [**Read the docs**](https://www.darkanchor.com/docs)
 
 ---
 
@@ -76,16 +76,14 @@ The first nginx-native AI gateway. Zero added latency. Your data stays local. To
 
 | Module | Open / Paid | What it does |
 |--------|------------|--------------|
-| llm-proxy | Free | Multi-provider routing (OpenAI, Anthropic, local) |
-| llm-auth | Free | API key validation |
-| llm-metrics | Free | Request counts, latency, error rates by model |
-| llm-fallback (basic) | Free | Provider A down → try provider B |
-| **llm-ratelimit** | Paid | Per-user, per-key RPM + TPM rate limiting |
-| **llm-cost** | Paid | Per-request cost tracking → PostgreSQL |
-| **llm-cache** | Paid | Semantic cache — 30–70% fewer API calls |
-| **llm-security** | Paid | Prompt injection detection, PII filtering |
-| **llm-fallback (advanced)** | Paid | Cost-aware, latency-aware model switching |
-| **Dashboard** | Paid | Web UI for cost, usage, quotas, team management |
+| **llm-proxy** | BSL | Multi-provider routing (OpenAI, Anthropic, local) |
+| **llm-auth** | BSL | API key validation |
+| **llm-metrics** | BSL | Request counts, latency, error rates by model |
+| **llm-ratelimit** | BSL | Per-user, per-key RPM + TPM rate limiting |
+| **llm-cost** | BSL | Per-request cost tracking → PostgreSQL |
+| **llm-cache** | BSL | Conservative cache policy surface for deciding eligibility, scope, and bypass reasons |
+| **llm-security** | BSL | Prompt injection detection, PII filtering |
+| **llm-fallback** | BSL | Cost-aware, latency-aware model switching |
 
 ---
 
