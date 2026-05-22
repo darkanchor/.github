@@ -74,7 +74,7 @@ zig build
 
 The first nginx-native AI gateway. Zero added latency. Your data stays local. Token-level control no SaaS proxy can match.
 
-| Module | Open / Paid | What it does |
+| Module | License | What it does |
 |--------|------------|--------------|
 | **llm-proxy** | BSL | Multi-provider routing (OpenAI, Anthropic, local) |
 | **llm-auth** | BSL | API key validation |
