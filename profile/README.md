@@ -10,7 +10,7 @@ darkanchor builds the richest nginx module ecosystem under Apache 2.0 — and th
 |---------|---------|----------|---------|---------|
 | [**nginz**](https://github.com/darkanchor/nginz) | 26 native modules | Zig | Apache 2.0 | Hot-path primitives: auth, rate limiting, WAF, health checks, Prometheus |
 | [**nginz-njs**](https://github.com/darkanchor/nginz-njs) | 13 scripted modules | Gleam → njs | Apache 2.0 | Policy layer: routing, orchestration, feature flags, transforms |
-| **nginz-token** | 11 modules | Zig + Gleam | BSL 1.1 → Apache 2.0 | AI Gateway: token-level rate limiting, cost tracking |
+| **nginz-token** | 8 modules | Zig | BSL 1.1 → Apache 2.0 | AI Gateway: token-level rate limiting, cost tracking |
 
 **39 modules.** All free. All open source. All plug into stock, unmodified nginx — no fork, no custom binary.
 
